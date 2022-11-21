@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="main">
+        <div id="navigation">
+            <a>Ads Assistent</a>
+            <a href="login.html">Logout</a>
+            <a href="">User</a>
+        </div>
+        <div class="firstDiv">
+            <div id="sidenav" class="dashboardContainer">
+                <button id="activeTab" name="dashboard" class="navbtn" onclick="getNewPage(this)">Dashboard</button>
+                <button class="navbtn" name="postad" onclick="getNewPage(this)">New Ads</button>
+                <button class="navbtn" name="status" onclick="getNewPage(this)">Ads Status</button>
+                <button class="navbtn" name="chats" onclick="getNewPage(this)">Chats</button>
+                <button class="navbtn" name="about" onclick="getNewPage(this)">About</button>
+                <button class="navbtn" name="contacts" onclick="getNewPage(this)">Contacts</button>
+            </div>
+            <div id="mainContent" class="dashboardContainer">
+                <button id="filter">Filter</button>
+                <button class="productCard"></button>
+                <button class="productCard"></button>
+                <button class="productCard"></button>
+                <button class="productCard"></button>
+                <button class="productCard"></button>
+                <button class="productCard"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getNewPage(t){
+            let btn=t.name;
+            let target=btn+".php";
+            window.location.href=target;
+        }
+        function filter(){
+            
+        }
+    </script>
+</body>
+</html>
